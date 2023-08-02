@@ -1,27 +1,9 @@
-# React + TypeScript + Vite
+# NL2TYPE
+将自然语言转为结构化的数据  
+基于[microsoft/TypeChat](https://github.com/microsoft/TypeChat)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+>支持Azure OpenAI和OpenAI，需要使用自己的key。  
+>完全的前端项目，没有服务端，所有操作都基于本地。不会泄露你的key。
 
-Currently, two official plugins are available:
+![img.png](./public/img.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
