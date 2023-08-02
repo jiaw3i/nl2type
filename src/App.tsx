@@ -17,7 +17,7 @@ function App() {
     const [formData, setFormData] = useState<FormData>({
         endpoint: "https://api.openai.com/v1/engines/davinci/completions",
         key: '<YourKey>',
-        typeName: "Person",
+        typeName: "Airline",
         schema:"export interface Airline{\n" +
             "    datetime: string;\n" +
             "    from: string;\n" +
